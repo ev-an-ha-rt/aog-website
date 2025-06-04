@@ -9,14 +9,32 @@
     html, body {
       height: 100vh;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    nav ul {
+      justify-content: center;
+    }
+    .image-cycle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
     }
     .image-cycle img {
       cursor: pointer;
-      max-height: 80vh;
+      max-height: 70vh;
       width: auto;
       height: auto;
       display: block;
-      margin: 0 auto;
+    }
+    .blurb {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      font-size: 0.9rem;
+      color: #444;
     }
   </style>
 </head>
@@ -37,6 +55,9 @@
         <img id="cyclingImage" src="assets/image1.jpg" alt="Artwork" onclick="cycleImage()" />
       </div>
     </section>
+    <div class="blurb">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </div>
   </main>
 
   <footer>
