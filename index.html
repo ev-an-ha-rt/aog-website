@@ -11,7 +11,6 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="photos.html">Photos</a></li>
         <li><a href="writing.html">Writing</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
@@ -21,12 +20,32 @@
   <main>
     <section class="hero">
       <h1>Your Name</h1>
-      <p>Welcome to my site — an evolving archive of photography, writing, and more.</p>
+      <div class="image-cycle">
+        <img id="cyclingImage" src="assets/image1.jpg" alt="Artwork" onclick="cycleImage()" />
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Your Name</p>
   </footer>
+
+  <script>
+    const images = [
+      'assets/image1.jpg',
+      'assets/image2.jpg',
+      'assets/image3.jpg',
+      'assets/image4.jpg',
+      'assets/image5.jpg',
+      'assets/image6.jpg',
+      'assets/image7.jpg',
+      'assets/image8.jpg'
+    ];
+    let index = 0;
+    function cycleImage() {
+      index = (index + 1) % images.length;
+      document.getElementById('cyclingImage').src = images[index];
+    }
+  </script>
 </body>
 </html>
