@@ -11,28 +11,37 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
+      padding: 2rem;
     }
     nav ul {
-      justify-content: center;
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+    }
+    nav li a {
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 500;
     }
     .image-cycle {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       flex-grow: 1;
+      margin-top: 2rem;
     }
     .image-cycle img {
       cursor: pointer;
-      max-height: 70vh;
+      max-height: 60vh;
       width: auto;
       height: auto;
-      display: block;
     }
     .blurb {
       text-align: left;
       max-width: 600px;
-      margin: 0 auto 2rem auto;
+      margin-top: 1rem;
       font-size: 0.9rem;
       color: #444;
     }
