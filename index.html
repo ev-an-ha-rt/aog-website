@@ -3,8 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Your Name</title>
+  <title>Home</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      height: 100vh;
+      overflow: hidden;
+    }
+    .image-cycle img {
+      cursor: pointer;
+      max-height: 80vh;
+      width: auto;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,7 +33,6 @@
 
   <main>
     <section class="hero">
-      <h1>Your Name</h1>
       <div class="image-cycle">
         <img id="cyclingImage" src="assets/image1.jpg" alt="Artwork" onclick="cycleImage()" />
       </div>
@@ -27,7 +40,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Your Name</p>
+    <p>&copy; 2025</p>
   </footer>
 
   <script>
