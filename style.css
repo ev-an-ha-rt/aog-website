@@ -131,6 +131,10 @@ a.contact-link:hover {
   color: #0a15fe;
 }
 
+.photo-collection a:hover p {
+  color: #0a15fe; /* Or your preferred highlight blue */
+}
+
 .photo-collection p {
   margin-top: 0.5rem;
   font-size: 0.85rem;
