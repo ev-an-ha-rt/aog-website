@@ -14,10 +14,12 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 2rem;
+
 }
 
 main {
-  flex-grow: 1;
+  flex-grow: 0; /* prevents footer from being forced too low */
 }
 
 .blurb-footer {
@@ -25,8 +27,8 @@ main {
   color: #888;
   padding-left: 0.25rem;
   padding-top: 2rem;
-  margin-top: auto;
   text-align: left;
+  margin-top: 2rem; /* instead of auto */
 }
 
 nav ul {
