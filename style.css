@@ -58,7 +58,7 @@ nav li a:hover {
 
 .blurb-container {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   flex-wrap: wrap;
   align-items: flex-start;
 }
