@@ -110,16 +110,15 @@ a.contact-link:hover {
     order: 2;
   }
 
-  .mobile-order-wrapper > .blurb {
+  .mobile-order-wrapper > .blurb-contact-wrapper {
     order: 3;
-  }
-
-  .mobile-order-wrapper > .contact {
-    order: 4;
+    flex-direction: column;
+    display: flex;
+    gap: 1.5rem;
   }
 
   .mobile-order-wrapper > .blurb-footer {
-    order: 5;
+    order: 4;
   }
 
   nav ul {
@@ -150,12 +149,6 @@ a.contact-link:hover {
     max-height: 60vh;
   }
 
-  .blurb-container {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: flex-start;
-  }
-
   .blurb,
   .contact {
     font-size: 0.95rem;
@@ -171,3 +164,31 @@ a.contact-link:hover {
     font-size: 0.95rem;
   }
 }
+
+/* === Desktop Styles (above 768px) === */
+@media (min-width: 769px) {
+  .mobile-order-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-order-wrapper > nav {
+    order: 1;
+  }
+
+  .mobile-order-wrapper > .image-cycle {
+    order: 2;
+  }
+
+  .mobile-order-wrapper > .blurb-contact-wrapper {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .mobile-order-wrapper > .blurb-footer {
+    order: 4;
+  }
+} 
