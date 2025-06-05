@@ -88,6 +88,42 @@ a.contact-link:hover {
   color: #295BC5;
 }
 
+.photos-wrapper {
+  padding: 2rem 1rem;
+}
+
+.photo-collections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.photo-collection {
+  width: 150px;
+  text-align: center;
+}
+
+.photo-collection img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.photo-collection img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.photo-collection p {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .content-wrapper {
