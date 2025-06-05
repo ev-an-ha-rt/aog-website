@@ -29,12 +29,17 @@ nav li a {
   font-size: 0.9rem;
 }
 
+nav li a:hover {
+  color: #295BC5; /* Or whatever your favicon blue is */
+}
+
 .hero {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   flex-grow: 1;
+  margin-top: 1rem; /* Add this for spacing between header and image */
 }
 
 .image-cycle {
