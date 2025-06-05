@@ -13,12 +13,20 @@ html, body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+main {
+  flex-grow: 1;
+}
+
+.blurb-footer {
+  font-size: 0.875rem;
+  color: #888;
+  padding-left: 0.25rem;
+  padding-top: 2rem;
+  margin-top: auto;
+  text-align: left;
 }
 
 nav ul {
@@ -72,13 +80,6 @@ nav li a:hover {
   max-width: 300px;
   font-size: 0.9rem;
   color: #444;
-}
-
-.blurb-footer {
-  font-size: 0.875rem;
-  color: #888;
-  margin-top: 1rem;
-  padding-left: 0.25rem;
 }
 
 a.contact-link {
