@@ -47,7 +47,7 @@
     }
     .blurb-container {
       display: flex;
-      gap: 4rem;
+      gap: 5rem;
       flex-wrap: wrap;
     }
     .blurb, .contact {
@@ -55,6 +55,12 @@
       max-width: 300px;
       font-size: 0.9rem;
       color: #444;
+    }
+    .blurb-footer {
+      font-size: 0.875rem;
+      color: #888;
+      margin-top: 1rem;
+      padding-left: 0.25rem;
     }
   </style>
 </head>
@@ -77,6 +83,7 @@
       <div class="blurb-container">
         <div class="blurb">
           <p>This website is Evan Hart's personal project. The domain name is a lyric from a Vampire Weekend song.</p>
+          <div class="blurb-footer">&copy; 2025</div>
         </div>
         <div class="contact">
           <p><a href="mailto:evan.hart@archofglass.com">evan.hart@archofglass.com</a></p>
@@ -85,10 +92,6 @@
       </div>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025</p>
-  </footer>
 
   <script>
     const images = [
