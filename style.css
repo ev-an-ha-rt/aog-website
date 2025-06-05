@@ -124,7 +124,6 @@ a.contact-link:hover {
 }
 
 nav li a.active {
-  font-weight: bold;
   color: #0a15fe;
 }
 
