@@ -108,7 +108,7 @@ a.contact-link:hover {
 
 .photo-collection {
   width: 150px;
-  text-align: center;
+  text-align: left;
 }
 
 .photo-collection img {
@@ -125,7 +125,6 @@ a.contact-link:hover {
   margin-top: 0.5rem;
   font-size: 0.85rem;
   color: #000000;
-  justify-content: left;
 }
 
 nav li a.active {
