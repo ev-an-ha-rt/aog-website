@@ -56,6 +56,7 @@
       display: flex;
       gap: 5rem;
       flex-wrap: wrap;
+      align-items: flex-start;
     }
 
     .blurb, .contact {
@@ -73,12 +74,16 @@
     }
 
     a.contact-link {
-      color: #000;
+      color: #444;
       text-decoration: none;
     }
 
     a.contact-link:visited {
-      color: #000;
+      color: #444;
+    }
+
+    a.contact-link:hover {
+      color: #7791B6;
     }
   </style>
 </head>
@@ -103,7 +108,7 @@
           <p>This website is Evan Hart's personal project. The domain name is a lyric from a Vampire Weekend song.</p>
           <div class="blurb-footer">&copy; 2025</div>
         </div>
-        <div class="contact" style="margin-top: -0.5rem;">
+        <div class="contact">
           <p><a class="contact-link" href="mailto:evan.hart@archofglass.com">evan.hart@archofglass.com</a></p>
           <p><a class="contact-link" href="https://www.instagram.com/evan___hart" target="_blank">@evan___hart</a></p>
         </div>
