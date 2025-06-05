@@ -30,7 +30,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #0a15fe;/
+  color: #0a15fe;
 }
 
 .hero {
@@ -89,4 +89,58 @@ a.contact-link:visited {
 
 a.contact-link:hover {
   color: #295BC5; /* Favicon blue */
+}
+
+/* === Mobile Styles (up to 768px) === */
+@media (max-width: 768px) {
+  body {
+    padding: 1.25rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  nav li a {
+    font-size: 1rem;
+  }
+
+  .hero {
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .image-cycle {
+    justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .image-cycle img {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+
+  .blurb-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .blurb,
+  .contact {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .blurb-footer {
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+  }
+
+  a.contact-link {
+    font-size: 0.95rem;
+  }
 }
