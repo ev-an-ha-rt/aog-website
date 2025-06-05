@@ -1,16 +1,11 @@
-/* Base Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html, body {
   height: 100vh;
   margin: 0;
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  font-family: sans-serif;
+  background-color: #fff;
 }
 
 nav ul {
@@ -57,7 +52,8 @@ nav li a {
   align-items: flex-start;
 }
 
-.blurb, .contact {
+.blurb,
+.contact {
   text-align: left;
   max-width: 300px;
   font-size: 0.9rem;
@@ -81,10 +77,5 @@ a.contact-link:visited {
 }
 
 a.contact-link:hover {
-  color: #295BC5; /* Favicon blue — adjust if needed */
-}
-
-
-a.contact-link:hover {
-  color: #295BC5; /* Favicon blue — adjust if needed */
+  color: #295BC5; /* Favicon blue */
 }
