@@ -123,6 +123,10 @@ a.contact-link:hover {
   color: #444;
 }
 
+nav li a.active {
+  font-weight: bold;
+  color: #0a15fe;
+}
 
 /* Mobile styles */
 @media (max-width: 768px) {
