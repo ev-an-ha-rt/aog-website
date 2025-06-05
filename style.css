@@ -152,3 +152,9 @@ nav li a.active {
   display: flex;
   flex-direction: column;
 }
+
+.writing-list ul {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0;        /* Optional: removes default indent */
+  text-decoration: none;
+}
