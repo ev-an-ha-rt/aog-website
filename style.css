@@ -152,38 +152,3 @@ nav li a.active {
   display: flex;
   flex-direction: column;
 }
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  
-  .wrapper {
-  padding: 2rem;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
- 
- 
-  .content-wrapper {
-    flex-direction: column;
-  }
-
-  .image-cycle {
-    order: 1;
-  }
-
-  .header {
-    order: 2;
-  }
-
-  .blurb-contact-wrapper {
-    order: 3;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .blurb-footer {
-    order: 4;
-  }
-
-} 
