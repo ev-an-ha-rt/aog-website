@@ -7,56 +7,39 @@
 
 html, body {
   height: 100vh;
-  overflow: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #fdfdfd;
-  color: #1a1a1a;
-  line-height: 1.6;
-  padding: 1.5rem 6vw;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 2rem;
-  padding: 1rem 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 500;
-  transition: opacity 0.2s;
-}
-
-nav a:hover {
-  opacity: 0.6;
-}
-
-header, footer {
-  text-align: left;
-  margin-top: 1rem;
-  font-size: 0.875rem;
-  color: #888;
-  padding-left: 0.25rem;
-}
-
-.hero {
-  text-align: left;
-  margin-top: 2rem;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
   margin-bottom: 1rem;
 }
 
-.hero p {
-  font-size: 1.125rem;
-  color: #444;
+nav li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 1;
 }
 
 .image-cycle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -65,13 +48,13 @@ header, footer {
   max-height: 60vh;
   width: auto;
   height: auto;
-  display: block;
 }
 
 .blurb-container {
   display: flex;
   gap: 5rem;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .blurb, .contact {
@@ -81,8 +64,22 @@ header, footer {
   color: #444;
 }
 
-footer {
-  margin-top: 3rem;
+.blurb-footer {
   font-size: 0.875rem;
   color: #888;
+  margin-top: 1rem;
+  padding-left: 0.25rem;
+}
+
+a.contact-link {
+  color: #444;
+  text-decoration: none;
+}
+
+a.contact-link:visited {
+  color: #444;
+}
+
+a.contact-link:hover {
+  color: #295BC5; /* Favicon blue — adjust if needed */
 }
