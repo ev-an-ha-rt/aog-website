@@ -16,7 +16,7 @@ html, body {
 
 nav ul {
   display: flex;
-  gap: 1.25rem;
+  gap: 1rem;
   list-style: none;
   padding: 0;
   margin-bottom: 2rem;
