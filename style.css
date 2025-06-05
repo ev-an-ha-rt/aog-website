@@ -1,3 +1,4 @@
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +9,10 @@ html, body {
   height: 100vh;
   margin: 0;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
   font-family: sans-serif;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul {
@@ -33,20 +34,17 @@ nav li a:hover {
   color: #0a15fe;
 }
 
-.hero {
+.content-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  gap: 1rem;
   flex-grow: 1;
-  margin-top: 1rem; /* Add this for spacing between header and image */
 }
 
 .image-cycle {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
 .image-cycle img {
@@ -56,10 +54,9 @@ nav li a:hover {
   height: auto;
 }
 
-.blurb-container {
+.blurb-contact-wrapper {
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -88,107 +85,30 @@ a.contact-link:visited {
 }
 
 a.contact-link:hover {
-  color: #295BC5; /* Favicon blue */
+  color: #295BC5;
 }
 
-/* === Mobile Styles (up to 768px) === */
+/* Mobile styles */
 @media (max-width: 768px) {
-  body {
-    padding: 1.25rem;
-  }
-
-  .mobile-order-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mobile-order-wrapper > .image-cycle {
-    order: 1;
-  }
-
-  .mobile-order-wrapper > nav {
-    order: 2;
-  }
-
-  .mobile-order-wrapper > .blurb-contact-wrapper {
-    order: 3;
-    flex-direction: column;
-    display: flex;
-    gap: 1.5rem;
-  }
-
-  .mobile-order-wrapper > .blurb-footer {
-    order: 4;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
-  }
-
-  nav li a {
-    font-size: 1rem;
-  }
-
-  .hero {
-    align-items: center;
-    margin-top: 1rem;
-    display: flex;
+  .content-wrapper {
     flex-direction: column;
   }
 
   .image-cycle {
-    justify-content: center;
-    margin-bottom: 1.25rem;
-  }
-
-  .image-cycle img {
-    width: 100%;
-    height: auto;
-    max-height: 60vh;
-  }
-
-  .blurb,
-  .contact {
-    font-size: 0.95rem;
-    max-width: 100%;
-  }
-
-  .blurb-footer {
-    font-size: 0.8rem;
-    margin-top: 0.75rem;
-  }
-
-  a.contact-link {
-    font-size: 0.95rem;
-  }
-}
-
-/* === Desktop Styles (above 768px) === */
-@media (min-width: 769px) {
-  .mobile-order-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mobile-order-wrapper > nav {
     order: 1;
   }
 
-  .mobile-order-wrapper > .image-cycle {
+  .header {
     order: 2;
   }
 
-  .mobile-order-wrapper > .blurb-contact-wrapper {
+  .blurb-contact-wrapper {
     order: 3;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
-  .mobile-order-wrapper > .blurb-footer {
+  .blurb-footer {
     order: 4;
   }
 } 
