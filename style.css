@@ -110,11 +110,6 @@ a.contact-link:hover {
   object-fit: cover;
 }
 
-.photo-collection img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 .photo-collection p {
   margin-top: 0.5rem;
   font-size: 0.85rem;
