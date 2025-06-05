@@ -6,9 +6,61 @@
   <title>Photos</title>
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main.photos-wrapper {
+      flex-grow: 1;
+      padding: 2rem;
+    }
+
+    .photo-collections {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: flex-start;
+    }
+
+    .photo-collection {
+      width: 150px;
+      text-align: center;
+    }
+
+    .photo-collection img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      transition: transform 0.2s ease;
+    }
+
+    .photo-collection img:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .photo-collection p {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #444;
+    }
+
+    .blurb-footer {
+      font-size: 0.875rem;
+      color: #888;
+      padding: 1rem 2rem;
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
-<header class="header">
+  <header class="header">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -19,6 +71,7 @@
   </header>
 
   <main class="photos-wrapper">
+    <h1>Photography</h1>
     <div class="photo-collections">
       <div class="photo-collection">
         <a href="#">
