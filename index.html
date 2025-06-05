@@ -45,12 +45,15 @@
       width: auto;
       height: auto;
     }
-    .blurb {
+    .blurb-container {
+      display: flex;
+      gap: 2rem;
+    }
+    .blurb, .contact {
       text-align: left;
-      max-width: 600px;
+      max-width: 300px;
       font-size: 0.9rem;
       color: #444;
-      margin: 0;
     }
   </style>
 </head>
@@ -70,8 +73,14 @@
       <div class="image-cycle">
         <img id="cyclingImage" src="assets/image1.jpg" alt="Artwork" onclick="cycleImage()" />
       </div>
-      <div class="blurb">
-        <p>This website is the personal project of Evan Hart. The domain name is a lyric from a Vampire Weekend song.</p>
+      <div class="blurb-container">
+        <div class="blurb">
+          <p>This website is Evan Hart's personal project. The domain name is a lyric from a Vampire Weekend song.</p>
+        </div>
+        <div class="contact">
+          <p>evan.hart@archofglass.com</p>
+          <p>@evan___hart</p>
+        </div>
       </div>
     </section>
   </main>
