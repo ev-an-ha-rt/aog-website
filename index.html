@@ -14,18 +14,22 @@
       display: flex;
       flex-direction: column;
     }
+
     nav ul {
       display: flex;
-      gap: 2rem;
+      gap: 1.25rem;
       list-style: none;
       padding: 0;
       margin-bottom: 1rem;
     }
+
     nav li a {
       text-decoration: none;
       color: #1a1a1a;
       font-weight: 500;
+      font-size: 0.9rem;
     }
+
     .hero {
       display: flex;
       flex-direction: column;
@@ -33,53 +37,58 @@
       justify-content: flex-start;
       flex-grow: 1;
     }
+
     .image-cycle {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       margin-bottom: 1rem;
     }
+
     .image-cycle img {
       cursor: pointer;
       max-height: 60vh;
       width: auto;
       height: auto;
     }
+
     .blurb-container {
       display: flex;
       gap: 5rem;
       flex-wrap: wrap;
     }
+
     .blurb, .contact {
       text-align: left;
       max-width: 300px;
       font-size: 0.9rem;
       color: #444;
     }
+
     .blurb-footer {
       font-size: 0.875rem;
       color: #888;
       margin-top: 1rem;
       padding-left: 0.25rem;
     }
-  a.contact-link {
-  color: #000;
-  text-decoration: none;
-}
 
-a.contact-link:visited {
-  color: #000;
-}
+    a.contact-link {
+      color: #000;
+      text-decoration: none;
+    }
 
-</style>
+    a.contact-link:visited {
+      color: #000;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="photos.html">Photos</a></li>
         <li><a href="writing.html">Writing</a></li>
-        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
