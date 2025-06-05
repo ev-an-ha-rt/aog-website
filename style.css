@@ -109,7 +109,11 @@ a.contact-link:hover {
 .photo-collection {
   width: 150px;
   text-align: left;
+}
+
+.photo-collection a {
   text-decoration: none;
+  color: inherit; /* Optional: keeps the text color consistent with surrounding styles */
 }
 
 .photo-collection img {
@@ -120,6 +124,11 @@ a.contact-link:hover {
 
 .photo-collection img:hover {
   cursor: pointer;
+}
+
+.photo-collection p:hover {
+  cursor: pointer;
+  color: #0a15fe;
 }
 
 .photo-collection p {
