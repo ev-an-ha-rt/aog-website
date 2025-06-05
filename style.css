@@ -124,7 +124,8 @@ a.contact-link:hover {
 .photo-collection p {
   margin-top: 0.5rem;
   font-size: 0.85rem;
-  color: #000000;
+  color: #444;
+  text-decoration: none;
 }
 
 nav li a.active {
