@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Photo Collection</title>
+  <title>Collection 1</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,7 +12,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="photos.html">Photos</a></li>
+          <li><a href="photos.html" class="active">Photos</a></li>
           <li><a href="writing.html">Writing</a></li>
         </ul>
       </nav>
@@ -20,22 +20,51 @@
 
     <main class="content-wrapper collection-layout">
       <div class="photo-display">
-        <img src="assets/your-photo.jpg" alt="Descriptive Alt Text" />
+        <img id="carouselImage" src="assets/image1.jpg" alt="Artwork" onclick="cycleCollection()" />
       </div>
 
       <div class="text-under-photo">
-        <div class="photo-caption">
-          <h2>Photo Title</h2>
-          <p>This is the caption for the photo. Add relevant details here.</p>
+        <div class="project-description">
+          <p>This collection explores the interplay of light and texture in everyday spaces. Each photo examines how space is shaped not only by architecture but also by fleeting atmospheres.</p>
         </div>
 
-        <div class="project-description">
-          <p>This is a static explanatory block that describes the project. It stays consistent across photos in this collection and helps orient the viewer.</p>
+        <div class="photo-caption" id="captionBlock">
+          <h2 id="captionTitle">Title 1</h2>
+          <p id="captionText">This is the caption for image 1. It's about light hitting a stairwell.</p>
         </div>
       </div>
     </main>
 
     <footer class="blurb-footer">&copy; Evan Hart 2025</footer>
   </div>
+
+  <script>
+    const images = [
+      { src: "assets/photo-collections/italian surfaces/janet 1", title: "Janet", caption: "Lorem ipsum dolor sit amet." },
+      { src: "assets/photo-collections/italian surfaces/trees", title: "Trees", caption: "Lorem ipsum dolor sit amet." },
+      { src: "assets/photo-collections/italian surfaces/bathroomfloor", title: "Bathroom Floor", caption: "Lorem ipsum dolor sit amet." },
+      { src: "assets/photo-collections/italian surfaces/cuki", title: "Cuki", caption: "Lorem ipsum dolor sit amet." },
+      { src: "assets/photo-collections/italian surfaces/saxon1", title: "Saxon 1", caption: "Lorem ipsum dolor sit amet." },
+      { src: "assets/photo-collections/italian-surfaces/saxon2", title: "Saxon 2", caption: "Lorem ipsum dolor sit amet." },
+      { src: "assets/photo-collections/italian-surfaces/bug", title: "Bug", caption: "Lorem ipsum dolor sit amet." },
+      { src: "assets/photo-collections/italian-surfaces/langelica", title: "L'Angelica", caption: "Lorem ipsum dolor sit amet." },
+      { src: "assets/photo-collections/italian-surfaces/doublesunset", title: "Double Sunset", caption: "Lorem ipsum dolor sit amet." },
+      { src: "assets/photo-collections/italian-surfaces/graziella1", title: "Graziella 1", caption: "Lorem ipsum dolor sit amet." },
+      { src: "assets/photo-collections/italian-surfaces/graziella2", title: "Graziella 2", caption: "Lorem ipsum dolor sit amet." },
+    ];
+
+    let index = 0;
+
+    function cycleCollection() {
+      index = (index + 1) % images.length;
+      const img = document.getElementById("carouselImage");
+      const title = document.getElementById("captionTitle");
+      const text = document.getElementById("captionText");
+
+      img.src = images[index].src;
+      title.textContent = images[index].title;
+      text.textContent = images[index].caption;
+    }
+  </script>
 </body>
 </html>
