@@ -278,7 +278,6 @@ nav li a.active {
 @media (max-width: 768px) {
   .content-wrapper-contained {
     max-width: 100%;
-    padding: 1rem;
   }
 
   .text-under-photo {
