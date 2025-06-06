@@ -268,7 +268,7 @@ nav li a.active {
 
 .content-wrapper-contained {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10rem;
   padding: 10rem;
   display: flex;
   flex-direction: column;
