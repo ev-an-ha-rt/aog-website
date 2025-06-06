@@ -268,8 +268,27 @@ nav li a.active {
 
 .content-wrapper-contained {
   max-width: 1200px;
+  margin-top: 0rem;
   margin: 5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper-contained {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .text-under-photo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project-description,
+  .photo-caption {
+    max-width: 100%;
+    text-align: left;
+  }
 }
