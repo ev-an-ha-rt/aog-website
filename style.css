@@ -158,3 +158,44 @@ nav li a.active {
   padding-left: 0;        /* Optional: removes default indent */
   text-decoration: none;
 }
+
+.collection-layout {
+  align-items: center;
+  gap: 2rem;
+}
+
+.photo-display {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-display img {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.text-under-photo {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.photo-caption {
+  flex: 1;
+  text-align: left;
+  max-width: 45%;
+  font-size: 0.9rem;
+}
+
+.project-description {
+  flex: 1;
+  text-align: right;
+  max-width: 45%;
+  font-size: 0.9rem;
+  color: #555;
+}
