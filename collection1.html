@@ -8,36 +8,38 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="photos.html" class="active">Photos</a></li>
-        <li><a href="writing.html">Writing</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page-container">
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="photos.html" class="active">Photos</a></li>
+          <li><a href="writing.html">Writing</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="content-wrapper collection-layout">
-    <div class="wrapper fixed-desktop-container">
-      <div class="photo-display">
-        <img id="carouselImage" src="assets/photo-collections/italian-surfaces/janet1.jpg" alt="Artwork" onclick="cycleCollection()" />
-      </div>
-
-      <div class="text-under-photo">
-        <div class="project-description">
-          <p>This collection explores the interplay of light and texture in everyday spaces. Each photo examines how space is shaped not only by architecture but also by fleeting atmospheres.</p>
+    <main class="content-wrapper collection-layout">
+      <div class="wrapper fixed-desktop-container">
+        <div class="photo-display">
+          <img id="carouselImage" src="assets/photo-collections/italian-surfaces/janet1.jpg" alt="Artwork" onclick="cycleCollection()" />
         </div>
 
-        <div class="photo-caption" id="captionBlock">
-          <h2 id="captionTitle">Janet</h2>
-          <p id="captionText">This is the caption for image 1. It's about light hitting a stairwell.</p>
+        <div class="text-under-photo">
+          <div class="project-description">
+            <p>This collection explores the interplay of light and texture in everyday spaces. Each photo examines how space is shaped not only by architecture but also by fleeting atmospheres.</p>
+          </div>
+
+          <div class="photo-caption" id="captionBlock">
+            <h2 id="captionTitle">Janet</h2>
+            <p id="captionText">This is the caption for image 1. It's about light hitting a stairwell.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer class="blurb-footer">&copy; Evan Hart 2025</footer>
+    <footer class="blurb-footer">&copy; Evan Hart 2025</footer>
+  </div>
 
   <script>
     const images = [
