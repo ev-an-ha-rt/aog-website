@@ -202,10 +202,10 @@ nav li a.active {
 }
 
 .fixed-desktop-container {
-  width: 1200px;
-  max-width: 100%;
+  width: 1000x;
+  max-width: 80%;
   margin: 0 auto;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
