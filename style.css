@@ -265,3 +265,12 @@ nav li a.active {
 .photo-caption {
   text-align: right;
 }
+
+.content-wrapper-contained {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
