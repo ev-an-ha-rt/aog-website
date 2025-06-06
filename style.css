@@ -200,14 +200,3 @@ nav li a.active {
   font-size: 0.9rem;
   color: #555;
 }
-
-.fixed-desktop-container {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
