@@ -167,6 +167,7 @@ nav li a.active {
 .photo-display {
   display: flex;
   justify-content: center;
+  margin-top: 0rem;
 }
 
 .photo-display img {
