@@ -255,6 +255,10 @@ nav li a.active {
   gap: 2rem;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 @media (max-width: 768px) {
   .content-wrapper-contained {
     max-width: 100%;
