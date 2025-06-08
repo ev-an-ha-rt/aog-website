@@ -132,7 +132,7 @@ a.contact-link:hover {
 }
 
 .photo-collection a:hover p {
-  color: #0a15fe; /* Or your preferred highlight blue */
+  color: #0a15fe;
 }
 
 .photo-collection p {
@@ -159,10 +159,6 @@ nav li a.active {
   text-decoration: none;
 }
 
-.collection-layout {
-  align-items: center;
-}
-
 .photo-display {
   display: flex;
   justify-content: left;
@@ -170,8 +166,6 @@ nav li a.active {
 }
 
 .photo-display img {
-  max-width: 500x;
-  max-height: 300px;
   object-fit: cover;
 }
 
