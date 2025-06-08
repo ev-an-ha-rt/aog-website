@@ -170,9 +170,9 @@ nav li a.active {
 }
 
 .photo-display img {
-  max-width: 500px;
-  max-height: 500px;
-  object-fit: contain;
+  max-width: 500x;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 .text-under-photo {
@@ -227,14 +227,14 @@ nav li a.active {
 .text-under-photo {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .project-description,
 .photo-caption {
   flex: 1;
   max-width: 45%;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .project-description {
