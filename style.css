@@ -166,6 +166,7 @@ nav li a.active {
 }
 
 .photo-display img {
+  cursor: pointer;
   max-width: 800px;
   max-height: 500px;
   object-fit: cover;
@@ -265,4 +266,11 @@ nav li a.active {
     max-width: 100%;
     text-align: left;
   }
+
+  .photo-display img {
+  cursor: pointer;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+}
 }
