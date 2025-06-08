@@ -166,6 +166,7 @@ nav li a.active {
 }
 
 .photo-display img {
+  max-width: 1000px;
   object-fit: cover;
 }
 
@@ -246,10 +247,6 @@ nav li a.active {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-* {
-  outline: 1px solid red;
 }
 
 @media (max-width: 768px) {
