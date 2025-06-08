@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collection 1</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="photos.html" class="active">Photos</a></li>
+          <li><a href="writing.html">Writing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="collection-layout">
+      <div class="content-wrapper-contained">
+
+        <div class="photo-display">
+          <img id="carouselImage" src="assets/photo-collections/italian-surfaces/janet1.jpg" alt="Artwork" onclick="cycleCollection()" />
+        </div>
+
+        <div class="text-under-photo">
+          <div class="project-description">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="photo-caption" id="captionBlock">
+            <h2 id="captionTitle">Janet</h2>
+            <p id="captionText">My mother, Janet Hart, pictured lying down in the square sitting area off the kitchen in Termini. The room has since been remodeled.</p>
+          </div>
+        </div>
+      </div>
+      </main>
+
+    <footer class="blurb-footer">&copy; Evan Hart 2025</footer>
+  </div>
+
+  <script>
+    const images = [
+      { src: "assets/photo-collections/italian-surfaces/janet1.jpg", title: "Janet", caption: "My mother, Janet Hart, pictured lying down in the square sitting area off the kitchen in Termini. The room has since been remodeled." },
+      { src: "assets/photo-collections/italian-surfaces/trees.jpg", title: "Trees", caption: "The branches of a kumquat plant that look like a thick-leafed tree." },
+      { src: "assets/photo-collections/italian-surfaces/bathroomfloor.jpg", title: "Bathroom Floor", caption: "A towel takes up the corner of a tile field." },
+      { src: "assets/photo-collections/italian-surfaces/cuki.jpg", title: "Cuki", caption: "A domestic scene in the corner of a room. Cuki is a brand of seran wrap I used to apply a salve to my burnt hand." },
+      { src: "assets/photo-collections/italian-surfaces/saxon1.jpg", title: "Saxon 1", caption: "A picture of my brother, Saxon, hard flash at the Massa Lubrense marina." },
+      { src: "assets/photo-collections/italian-surfaces/saxon2.jpg", title: "Saxon 2", caption: "A picture of my brother, Saxon, on a green couch with religious icons embedded in the walls behind him.." },
+      { src: "assets/photo-collections/italian-surfaces/bug.jpg", title: "Bug", caption: "An ornate light-fixture sitting on an empty wall. It looked to me like a big strange bug crawled up the wall and had, once comfortable there, unfurled itself." },
+      { src: "assets/photo-collections/italian-surfaces/langelica.jpg", title: "L'Angelica", caption: "A self-portrait in the bathroom on the first floor of the house. The picture is named for the only visible piece of text, the brand name on a shampoo bottle." },
+      { src: "assets/photo-collections/italian-surfaces/doublesunset.jpg", title: "Double Sunset", caption: "My parents, Richard and Janet, staring out the window at the old apartment. The sun is setting in front of them but they're backlit by the camera's flash." },
+      { src: "assets/photo-collections/italian-surfaces/graziella1.jpg", title: "Graziella 1", caption: "My great-aunt Graziella. She was not happy having her picture taken." },
+      { src: "assets/photo-collections/italian-surfaces/graziella2.jpg", title: "Graziella 2", caption: "My great-aunt Graziella. This picture was taken without her knowledge. She's framed by bougainvillea and the walls of the house." },
+    ];
+
+    let index = 0;
+
+    function cycleCollection() {
+      index = (index + 1) % images.length;
+      const img = document.getElementById("carouselImage");
+      const title = document.getElementById("captionTitle");
+      const text = document.getElementById("captionText");
+
+      img.src = images[index].src;
+      title.textContent = images[index].title;
+      text.textContent = images[index].caption;
+    }
+  </script>
+</body>
