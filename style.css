@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -15,26 +15,36 @@ html, body {
   flex-direction: column;
 }
 
-main {
+/* Layout */
+.wrapper, .content-wrapper, .content-wrapper-contained {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 2rem;
   flex-grow: 1;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  gap: 1rem;
   padding: 2rem;
 }
 
-.blurb-footer {
-  font-size: 0.875rem;
-  color: #888;
-  padding-left: 0.25rem;
-  padding-top: 2rem;
-  text-align: left;
-  margin-top: 2rem;
+.content-wrapper-contained {
+  max-width: 1200px;
+  margin: 5rem auto;
+  gap: 2rem;
 }
 
+/* Header & Navigation */
 nav ul {
   display: flex;
   gap: 1rem;
   list-style: none;
-  padding: 0;
   margin-bottom: 2rem;
+  padding: 0;
 }
 
 nav li a {
@@ -44,17 +54,22 @@ nav li a {
   font-size: 0.9rem;
 }
 
-nav li a:hover {
+nav li a:hover,
+nav li a.active {
   color: #0a15fe;
 }
 
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex-grow: 1;
+/* Footer */
+.blurb-footer {
+  font-size: 0.875rem;
+  color: #888;
+  text-align: left;
+  margin-top: 2rem;
+  padding-left: 0.25rem;
+  padding-top: 2rem;
 }
 
+/* Image Cycle */
 .image-cycle {
   display: flex;
   justify-content: left;
@@ -68,14 +83,14 @@ nav li a:hover {
   height: auto;
 }
 
+/* Blurb and Contact */
 .blurb-contact-wrapper {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
 }
 
-.blurb,
-.contact {
+.blurb, .contact {
   text-align: left;
   max-width: 300px;
   font-size: 0.9rem;
@@ -95,6 +110,7 @@ a.contact-link:hover {
   color: #295BC5;
 }
 
+/* Photos Page */
 .photos-wrapper {
   padding: 2rem 1rem;
 }
@@ -113,26 +129,14 @@ a.contact-link:hover {
 
 .photo-collection a {
   text-decoration: none;
-  color: inherit; /* Optional: keeps the text color consistent with surrounding styles */
+  color: inherit;
 }
 
 .photo-collection img {
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-.photo-collection img:hover {
   cursor: pointer;
-}
-
-.photo-collection p:hover {
-  cursor: pointer;
-  color: #0a15fe;
-}
-
-.photo-collection a:hover p {
-  color: #0a15fe; /* Or your preferred highlight blue */
 }
 
 .photo-collection p {
@@ -142,31 +146,30 @@ a.contact-link:hover {
   text-decoration: none;
 }
 
-nav li a.active {
+.photo-collection p:hover,
+.photo-collection a:hover p {
+  cursor: pointer;
   color: #0a15fe;
 }
 
- .wrapper {
-  padding: 2rem;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
+/* Writing Page */
 .writing-list ul {
-  list-style-type: none; /* Removes bullet points */
-  padding-left: 0;        /* Optional: removes default indent */
+  list-style-type: none;
+  padding-left: 0;
   text-decoration: none;
 }
 
+/* Collection Layout */
 .collection-layout {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
 .photo-display {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   margin-top: -1rem;
 }
 
@@ -179,55 +182,9 @@ nav li a.active {
 .text-under-photo {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 2rem;
   width: 100%;
-  flex-wrap: wrap;
-}
-
-.photo-caption {
-  flex: 1;
-  text-align: left;
-  max-width: 45%;
-  font-size: 0.9rem;
-}
-
-.project-description {
-  flex: 1;
-  text-align: right;
-  text-justify: right;
-  max-width: 45%;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Full-page layout control */
-.page-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Ensure main grows and footer stays down */
-.content-wrapper {
-  flex-grow: 1;
-}
-
-/* Already existing layout logic for the image + text */
-.collection-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.photo-display {
-  display: flex;
-  justify-content: center;
-}
-
-.text-under-photo {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
 }
 
 .project-description,
@@ -246,18 +203,11 @@ nav li a.active {
   text-align: right;
 }
 
-.content-wrapper-contained {
-  max-width: 1200px;
-  margin-top: 0rem;
-  margin: 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
   .content-wrapper-contained {
     max-width: 100%;
+    margin: 2rem;
   }
 
   .text-under-photo {
