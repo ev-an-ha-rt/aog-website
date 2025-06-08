@@ -172,9 +172,7 @@ nav li a.active {
 
 .photo-display img {
   max-width: 1000px;
-  max-height: 40vh;
   object-fit: contain;
-  border-radius: 4px;
 }
 
 .text-under-photo {
