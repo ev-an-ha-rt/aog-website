@@ -166,14 +166,14 @@ nav li a.active {
 
 .photo-display {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-top: -1rem;
 }
 
 .photo-display img {
   max-width: 500px;
   max-height: 500px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .text-under-photo {
