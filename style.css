@@ -185,6 +185,7 @@ nav li a.active {
   text-align: left;
   max-width: 45%;
   font-size: 0.9rem;
+  margin-right: auto;
 }
 
 .project-description {
